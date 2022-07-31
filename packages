@@ -1,14 +1,3 @@
-zsh
-git
-neovim
-nodejs
-g++
-ctags
-thefuck
-fd-find
-bat
-gh
-fzf
-zoxide
-ripgrep
-direnv
+hugo
+rpmdevtools
+rpmlint
