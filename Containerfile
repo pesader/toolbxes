@@ -17,7 +17,7 @@ RUN sed -ie 's/\<nodocs\>//' /etc/dnf/dnf.conf
 RUN dnf reinstall -y $(rpm -qa --queryformat '%{NAME}[:%{FILENAMES}]\n' | \
     grep ':/usr/share/man/' | cut -f1 -d:)
 
-# upgrade and install base packages
+# upgrade and install packages
 COPY packages /
 RUN dnf upgrade -y --refresh \
     && dnf install -y $(<packages) \
