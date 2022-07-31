@@ -15,7 +15,7 @@ RUN dnf reinstall -y $(rpm -qa --queryformat '%{NAME}[:%{FILENAMES}]\n' | \
 
 # upgrade and install base packages
 COPY packages /
-RUN dnf upgrade -y \
+RUN dnf upgrade -y --refresh \
     && dnf install -y $(<packages) \
     && dnf clean all \
     && rm /packages
