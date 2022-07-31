@@ -18,4 +18,4 @@ COPY packages /
 RUN dnf upgrade -y \
     && dnf install -y $(<packages) \
     && dnf clean all \
-    rm /packages
+    && rm /packages
