@@ -27,5 +27,5 @@ jobs:
             name: [base, unicamp, lkcamp, ic, others]
         steps:
           run: |
-            podman build -t "ghcr.io/${{ github.repository }}:${{ github.ref_name }}" ./${{ matrix.name }}
-            podman push "ghcr.io/${{ github.repository }}:${{ github.ref_name }}"
+            podman build -t "ghcr.io/${{ github.repository }}:${{ matrix.name }}" ./${{ matrix.name }}
+            podman push "ghcr.io/${{ github.repository }}:${{ matrix.name }}"
