@@ -1,14 +1,9 @@
-# Base
+# Toolboxes
 
-This image is used as a base for all other containers in this repo.
-It pulls from the latest Fedora release and does four things:
+This repo contains custom container images, meant to be used with
+[toolbox](https://github.com/containers/toolbox).
 
-- Speeds up `dnf` downloads
-- Configures `dnf` to install manpages when available
-- Reinstalls system packages that should have manpages
-- Installs a few packages that I'd like to have on every container
-
-The common packages are my text editor (`nvim`) and its dependencies (`g++`,
-`nodejs`, `ctags`, etc) as well as a few essential CLI tools (`zoxide`,
-`direnv`, `bat`, `gh`, etc).
-
+It was heavily inspired by
+[mikebarkmin/fedora-toolbox](https://github.com/mikebarkmin/fedora-toolbox),
+[returntrip/mytoolboxes](https://github.com/returntrip/mytoolboxes),
+[allisonkarlitskaya/lisbox](https://github.com/allisonkarlitskaya/lisbox)
