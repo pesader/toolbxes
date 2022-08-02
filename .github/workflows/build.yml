@@ -2,7 +2,7 @@ name: Build Toolbox Container
 
 on:
   schedule:
-    - cron: '*/59 * * * *'
+    - cron: '30 */6 * * *'
   push:
 
 jobs:
