@@ -1,3 +1,11 @@
 hugo
 rpmdevtools
 rpmlint
+rust-packaging
+dbus-devel
+libxcb-devel
+ncurses-devel
+openssl-devel
+openssl-devel
+pulseaudio-libs-devel
+pkgconf-pkg-config
