@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     strategy:
+      fail-fast: true
       max_parallel: 1
       matrix:
         name: [base, unicamp, lkcamp, ic, others]
