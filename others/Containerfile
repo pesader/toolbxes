@@ -12,5 +12,5 @@ LABEL name = $NAME \
 COPY packages /
 RUN dnf upgrade -y --refresh \
     && dnf install -y $(<packages) \
-    && dnf clean all \
+    && dnf clean all -y \
     && rm /packages

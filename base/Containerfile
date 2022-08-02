@@ -14,7 +14,7 @@ RUN echo 'max_parallel_downloads=10' | tee -a /etc/dnf/dnf.conf
 
 # install missing  manpages
 RUN sed -ie 's/\<nodocs\>//' /etc/dnf/dnf.conf
-RUN dnf --verbose reinstall -y $(rpm -qa --queryformat '%{NAME}[:%{FILENAMES}]\n' | \
+RUN dnf reinstall -y $(rpm -qa --queryformat '%{NAME}[:%{FILENAMES}]\n' | \
     grep ':/usr/share/man/' | cut -f1 -d:)
 
 # install cheat.sh
@@ -23,7 +23,7 @@ RUN curl -s https://cht.sh/:cht.sh | tee /usr/local/bin/cheat \
 
 # upgrade and install packages
 COPY packages /
-RUN dnf --verbose upgrade -y --refresh \
-    && dnf --verbose install -y $(<packages) \
-    && dnf --verbose clean all \
+RUN dnf upgrade -y --refresh \
+    && dnf install -y $(<packages) \
+    && dnf clean all -y \
     && rm /packages
