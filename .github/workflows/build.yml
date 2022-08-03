@@ -1,4 +1,4 @@
-name: Build Toolbox Container
+name: Build toolbx images
 
 on:
   schedule:
