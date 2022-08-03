@@ -1,15 +1,15 @@
-# Toolboxes
+# Toolbxes
 
 This repo contains custom container images, meant to be used with
-[`toolbox`](https://github.com/containers/toolbox).
+[`toolbx`](https://github.com/containers/toolbox).
 
 ## My approach to containerization
 
 Ever since I started daily driving Fedora Silverblue, an immutable variant of
 Fedora Workstation, I had to move my development workflow inside containers.
-Fedora Silverblue facilitates that a lot with ` toolbox`, a `podman` wrapper
+Fedora Silverblue facilitates that a lot with ` toolbx`, a `podman` wrapper
 that provides containers highly integrated with the host. You can think of
-`toolbox` like one of those virtual environments for programming languages
+`toolbx` like one of those virtual environments for programming languages
 (`virtualenv` for python, `nvm` for javascript, `rbenv` for ruby, etc) but for
 your system packages.
 
@@ -18,7 +18,7 @@ redundancy, mostly due to my text editor and all of its plugin dependencies. On
 online forums, it seemed that a popular approach to avoid such redundancy was
 to use a single container for every package not installed on the host. Although
 this would be more storage efficient, I think it defeats the purpose of
-`toolbox`, which is to help developers better compartmentalize their
+`toolbx`, which is to help developers better compartmentalize their
 environemnt so as to avoid having a single point of failure.
 
 After trying a few other approaches ("one container per programming language",
