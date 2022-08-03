@@ -1,4 +1,4 @@
-# LaTeX
+# TeX
 
 This image is used exclusively for LaTeX writing. I use a separate container just for that for two reasons:
 

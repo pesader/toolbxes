@@ -13,7 +13,7 @@ jobs:
       fail-fast: true
       max-parallel: 1
       matrix:
-        name: [base, unicamp, lkcamp, ic, latex, others]
+        name: [base, unicamp, lkcamp, ic, tex, others]
 
     steps:
 
