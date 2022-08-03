@@ -1,4 +1,4 @@
-FROM ghcr.io/pesader/toolboxes:base
+FROM ghcr.io/pesader/toolbxes:base
 
 ENV VERSION=36 NAME=base
 
