@@ -3,6 +3,14 @@
 This repo contains custom container images, meant to be used with
 [`toolbx`](https://github.com/containers/toolbox).
 
+## Usage
+
+You can create new containers from the images built in this repository with:
+
+```bash
+toolbox create --image ghcr.io/pesader/toolbxes:${container_name} ${container_name}
+```
+
 ## My approach to containerization
 
 Ever since I started daily driving Fedora Silverblue, an immutable variant of
