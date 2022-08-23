@@ -14,3 +14,10 @@ RUN dnf upgrade -y --refresh \
     && dnf install -y $(<packages) \
     && dnf clean all -y \
     && rm /packages
+
+# install correct hugo version
+RUN wget https://github.com/gohugoio/hugo/releases/download/v0.92.2/hugo_0.92.2_Linux-64bit.tar.gz \
+    && mkdir hugo_0.92.2_Linux-64bit \
+    && tar -xvzf ./hugo_0.92.2_Linux-64bit.tar.gz hugo \
+    && mv hugo /usr/bin/ \
+    && rm hugo_0.92.2_Linux-64bit.tar.gz
