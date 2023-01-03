@@ -9,7 +9,7 @@ LABEL name = $NAME \
       source = "https://github.com/pesader/toolboxes"
 
 # enable additional software repositories
-RUN dnf copr enable marcusmueller/sc-im
+RUN dnf copr enable -y marcusmueller/sc-im
 
 # upgrade and install packages
 COPY packages /
