@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '30 */6 * * *'
   push:
+  workflow_dispatch:
 
 jobs:
   build:
