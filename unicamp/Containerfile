@@ -8,6 +8,9 @@ LABEL name = $NAME \
       author = "Pedro Sader Azevedo <pedro.azevedo@students.ic.unicamp.br>" \
       source = "https://github.com/pesader/toolboxes"
 
+# enable additional software repositories
+RUN dnf copr enable marcusmueller/sc-im
+
 # upgrade and install packages
 COPY packages /
 RUN dnf upgrade -y --refresh \
