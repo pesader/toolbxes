@@ -2,7 +2,6 @@ ascii
 lld
 clang
 clang-tools-extra
-sc-im
 python3-virtualenvwrapper
 git-crypt
 julia
