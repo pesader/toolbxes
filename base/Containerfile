@@ -1,6 +1,6 @@
-FROM registry.fedoraproject.org/fedora-toolbox:37
+FROM registry.fedoraproject.org/fedora-toolbox:39
 
-ENV VERSION=37 NAME=base
+ENV VERSION=39 NAME=base
 
 LABEL name = $NAME \
       version = $VERSION \

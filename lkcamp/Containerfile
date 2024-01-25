@@ -1,6 +1,6 @@
 FROM ghcr.io/pesader/toolbxes:base
 
-ENV VERSION=36 NAME=base
+ENV VERSION=39 NAME=base
 
 LABEL name = $NAME \
       version = $VERSION \
